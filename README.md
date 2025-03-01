@@ -6,21 +6,25 @@ From designing a data warehouse to uncovering business intelligence, this portfo
 
 ---
 
-# Data Architecture Overview
+## 🏛️ Data Architecture 
+
+This project follows the **Medallion Architecture**, ensuring structured data processing and efficient analytics.  
 
 ![Dashboard Preview](docs/project_diagram.png)
 
-This project is built on the Medallion Architecture, leveraging a structured, multi-layered approach for efficient data processing and analytics. The architecture consists of three key layers:
+### 🪵 **Bronze Layer**  
+- 📥 Stores raw, unprocessed data directly from source systems.  
+- 📄 Data is ingested from **CSV files** into a **SQL Server database** without transformation.  
 
-🔸 Bronze Layer
-   Acts as the raw data storage layer, capturing information exactly as it arrives from source systems.
-   Data is ingested from CSV files into a SQL Server database without modifications.
-🔹 Silver Layer
-   Focuses on data refinement, including cleansing, standardization, and normalization.
-   Ensures data quality and consistency, making it ready for further transformation and analysis.
-🟡 Gold Layer
-   Designed for business intelligence and analytics, storing curated and structured data.
-   Organized using a star schema, making it optimized for reporting and decision-making.
-   This architecture enables scalability, maintainability, and performance, ensuring a smooth ETL workflow from raw data to actionable insights. 🚀
+### 🔧 **Silver Layer**  
+- 🧹 Cleans, standardizes, and normalizes data for better quality.  
+- 🔄 Prepares structured data for further transformation and analysis.  
+
+### ✨ **Gold Layer**  
+- 📊 Houses **business-ready, structured data** optimized for reporting.  
+- 🌟 Uses a **star schema** to enable efficient analytics and decision-making.  
+
+This architecture supports a **robust ETL pipeline**, turning raw data into **valuable insights**. 🚀  
+
 
 
