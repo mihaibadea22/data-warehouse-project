@@ -1,5 +1,3 @@
-# Data Warehouse and Analytics Project
-
 # 🚀 Welcome to the Data Warehouse & Analytics Project
 
 Dive into the world of **robust, scalable data solutions**. This project goes beyond just **storing data**—it focuses on transforming raw information into **actionable, impactful insights**.
