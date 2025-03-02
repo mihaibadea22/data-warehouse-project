@@ -68,7 +68,7 @@ IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
 GO
 
 CREATE TABLE bronze.erp_cust_az12(
-	cid INT,
+	cid NVARCHAR(50),
 	bdate DATE,
 	gen NVARCHAR(50)
 );
@@ -78,7 +78,7 @@ IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
 	DROP TABLE bronze.erp_loc_a101;
 GO
 
-CREATE TABLE bronze_erp_loc_a101(
+CREATE TABLE bronze.erp_loc_a101(
 	cid NVARCHAR(50),
 	cntry NVARCHAR(50)
 );
